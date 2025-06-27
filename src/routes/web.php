@@ -22,3 +22,7 @@ Route::post('/register', [UserController::class, 'register']);
 Route::get('/login', [UserController::class, 'loginForm'])->name('login');
 Route::post('/login', [UserController::class, 'login'])->name('login');
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+

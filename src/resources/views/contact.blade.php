@@ -12,16 +12,15 @@
 
     {{-- 氏名 --}}
     <div>
-        <label>姓 ※</label><br>
-        <input type="text" name="last_name" value="{{ old('last_name') }}">
+        <label>お名前※</label><br>
+        <input type="text" name="last_name" value="{{ old('last_name') }}" placeholder="例：山田">
         @error('last_name')
             <div class="error">{{ $message }}</div>
         @enderror
     </div>
 
     <div>
-        <label>名 ※</label><br>
-        <input type="text" name="first_name" value="{{ old('first_name') }}">
+        <input type="text" name="first_name" value="{{ old('first_name') }}" placeholder="例：太郎">
         @error('first_name')
             <div class="error">{{ $message }}</div>
         @enderror
@@ -41,7 +40,7 @@
     {{-- メールアドレス --}}
     <div>
         <label>メールアドレス ※</label><br>
-        <input type="text" name="email" value="{{ old('email') }}">
+        <input type="text" name="email" value="{{ old('email') }}" placeholder="例：test@example.com">
         @error('email')
             <div class="error">{{ $message }}</div>
         @enderror
@@ -51,9 +50,9 @@
     <div>
         <label>電話番号 ※</label><br>
 
-        <input type="text" name="tel1" value="{{ old('tel1') }}" size="4" maxlength="5"> -
-        <input type="text" name="tel2" value="{{ old('tel2') }}" size="4" maxlength="4"> -
-        <input type="text" name="tel3" value="{{ old('tel3') }}" size="4" maxlength="4">
+        <input type="text" name="tel1" value="{{ old('tel1') }}"  placeholder="080" size="4" maxlength="5"> -
+        <input type="text" name="tel2" value="{{ old('tel2') }}" placeholder="1234" size="4" maxlength="4"> -
+        <input type="text" name="tel3" value="{{ old('tel3') }}" placeholder="5678" size="4" maxlength="4">
 
         @if($errors->has('tel'))
             <div class="error">{{ $errors->first('tel') }}</div>
@@ -63,7 +62,7 @@
     {{-- 住所 --}}
     <div>
         <label>住所 ※</label><br>
-        <input type="text" name="address" value="{{ old('address') }}">
+        <input type="text" name="address" value="{{ old('address') }}"placeholder="例：東京都渋谷区千駄ヶ谷1-2-3">
         @error('address')
             <div class="error">{{ $message }}</div>
         @enderror
@@ -72,7 +71,7 @@
     {{-- 建物名（任意） --}}
     <div>
         <label>建物名</label><br>
-        <input type="text" name="building" value="{{ old('building') }}">
+        <input type="text" name="building" value="{{ old('building') }}"placeholder="例：千駄ヶ谷マンション101">
     </div>
 
     {{-- お問い合わせの種類 --}}
@@ -93,7 +92,7 @@
     {{-- お問い合わせ内容 --}}
     <div>
         <label>お問い合わせ内容 ※</label><br>
-        <textarea name="message" rows="5" maxlength="120">{{ old('message') }}</textarea>
+        <textarea name="message" rows="5" maxlength="120" placeholder="お問い合わせ内容をご記載ください">{{ old('message') }}</textarea>
         @error('message')
             <div class="error">{{ $message }}</div>
         @enderror
