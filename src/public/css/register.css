@@ -1,0 +1,122 @@
+/* 登録フォーム全体 */
+.register-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* タイトル */
+.register-container h2 {
+    font-family: "MS Mincho", "Yu Mincho", serif;
+    font-size: 2em;
+    color: #8B7969;
+    margin-bottom: 30px;
+}
+
+/* 入力グループ */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* ラベル */
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #8B7969;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* 入力欄 */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* フォーカス時 */
+.form-group input:focus {
+    border-color: #a8d0db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(168, 208, 219, 0.5);
+}
+
+/* エラーメッセージ */
+.form-group .error {
+    color: #e74c3c;
+    font-size: 0.8em;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* 登録ボタン */
+.form-group button[type="submit"] {
+    background-color: #82756A;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+/* 登録ボタン hover */
+.form-group button[type="submit"]:hover {
+    background-color: #6f655c;
+}
+
+/* Loginリンクボタン */
+.btn-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #8B7969;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #e0e0e0;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #8B7969;
+}
+
+/* 全体背景とフォント */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F1ECE7;
+    margin: 0;
+    padding: 0;
+}

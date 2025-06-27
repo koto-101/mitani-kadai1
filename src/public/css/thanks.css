@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: white; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    position: relative; 
+    overflow: hidden;
+}
+
+body::before {
+    content: "Thank you"; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 10em; 
+    font-weight: bold; 
+    color: #f5f5f5;
+    white-space: nowrap;
+    z-index: 0; 
+    pointer-events: none; 
+}
+
+.thanks-container {
+    text-align: center;
+    z-index: 1; 
+    padding: 30px;
+    max-width: 500px; 
+    width: 90%;
+}
+
+.thanks-container h2 {
+    font-size: 1.8em; 
+    color: #8B7969; 
+    margin-bottom: 30px; 
+    line-height: 1.5; 
+}
+
+.button-area {
+    margin-top: 20px; 
+}
+
+.home-button {
+    display: inline-block; 
+    padding: 12px 30px;
+    background-color: #82756A; 
+    color: white;
+    text-decoration: none; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 1.1em; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.home-button:hover {
+    background-color: #5a6268; 
+}
+
+@media (max-width: 768px) {
+    body::before {
+        font-size: 10em; 
+    }
+    .thanks-container h2 {
+        font-size: 1.5em;
+    }
+    .home-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+@media (max-width: 480px) {
+    body::before {
+        font-size: 7em; 
+    }
+    .thanks-container {
+        padding: 20px;
+    }
+    .thanks-container h2 {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
