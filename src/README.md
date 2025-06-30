@@ -22,11 +22,7 @@ php artisan key:generate
 ```
 
 5. マイグレーションの実行
-最初に、`users` テーブルを作成するマイグレーションを手動で実行します。
 ``` bash
-php artisan migrate --path=/database/migrations/2025_06_20_141028_create_users_table.php
-
-その後、残りのマイグレーションを実行します。
 php artisan migrate
 ```
 
